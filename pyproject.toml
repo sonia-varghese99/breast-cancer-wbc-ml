@@ -1,0 +1,19 @@
+[project]
+name = "breast-cancer-wbc-ml"
+version = "0.1.0"
+description = "Default template for PDM package"
+authors = [
+    {name = "Sonia Varghese", email = "s46svarg@uni-bonn.de"},
+]
+dependencies = ["numpy>=2.3.3", "pandas>=2.3.2", "matplotlib>=3.10.6", "seaborn>=0.13.2", "scikit-learn>=1.7.2", "jupyter>=1.1.1"]
+requires-python = ">=3.12"
+readme = "README.md"
+license = {text = "MIT"}
+
+[build-system]
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
+
+
+[tool.pdm]
+distribution = true
