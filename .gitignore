@@ -207,3 +207,7 @@ marimo/_lsp/
 __marimo__/
 /.pdm-python
 /.venv
+/pyproject.toml
+/pdm.lock
+/tests
+/src/breast_cancer_wbc_ml
