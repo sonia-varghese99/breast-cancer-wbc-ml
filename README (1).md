@@ -19,6 +19,47 @@ breast-cancer-wdbc-ml/
 ├─ LICENSE
 └─ README.md
 ```
+## Workflow
+
+flowchart TD
+
+A[🏁 Reproducibility & Environment Setup] --> B[📂 Data Loading & Initial Inspection]
+B --> B1[Load dataset using pandas]
+B --> B2[Inspect structure, data types, summary stats]
+B --> B3[Visualize class distribution (benign vs malignant)]
+
+B --> C[🧹 Data Pre-processing]
+C --> C1[Check for missing values]
+C --> C2[Generate correlation matrix]
+C --> C3[Drop highly correlated features based on domain knowledge]
+C --> C4[Standardize features and split into train/test sets]
+
+C --> D[⚙️ Model Training & Evaluation]
+D --> D1[Initialize models: kNN, LogReg, SVM, DT, RF, AdaBoost, GB]
+D --> D2[Use StratifiedKFold (CV=5)]
+D --> D3[Hyperparameter tuning via GridSearchCV]
+D --> D4[Evaluate metrics: F1-score (malignant) & AUROC]
+D --> D5[Rank models by mean AUROC & F1]
+
+D --> E[📈 ROC Curves & Confusion Matrices]
+E --> E1[Plot ROC curves for top models]
+E --> E2[Visualize confusion matrices]
+E --> E3[Interpret false positives & false negatives]
+
+E --> F[🔍 Feature Importance Analysis]
+F --> F1[Extract importances: .coef_ / .feature_importances_ / permutation]
+F --> F2[Plot ranked feature importances]
+F --> F3[Compare to medical literature (Bare Nuclei, Clump Thickness, etc.)]
+
+F --> G[🏆 Selecting the Best Model]
+G --> G1[Combine quantitative (F1, AUROC) and qualitative (interpretability) results]
+G --> G2[Select Logistic Regression as final model]
+G --> G3[Document justification & scientific consistency]
+
+G --> H[✅ Final Results & Discussion]
+H --> H1[Summarize workflow outcomes]
+H --> H2[Highlight key insights & reproducibility]
+
 
 ## ▶️ Reproduce
 ```bash
