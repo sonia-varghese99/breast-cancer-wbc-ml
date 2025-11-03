@@ -63,8 +63,8 @@ High precision means the model makes few false-positive errors. In medical diagn
 
 Recall measures how many of the actual positive cases are correctly identified.
 
-Recall = TP / (TP + FN)
-	​
+Recall = TP / (TP + FN) 
+
 High recall means the model catches most of the positive (malignant) cases, which is crucial in healthcare settings where false negatives are costly.
 
 5. **F1 Score:** 
@@ -72,7 +72,7 @@ High recall means the model catches most of the positive (malignant) cases, whic
 The F1 score is the harmonic mean of precision and recall, providing a single balanced measure of performance.
 
 F1 = (2 x (Precision x Recall)) / (Precision + Recall) 
-	​
+
 It is useful when there is an imbalance between classes, as it penalises extreme values in precision or recall.
 
 6. **AUC-ROC Curve (Area Under the Receiver Operating Characteristic Curve):**
