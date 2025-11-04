@@ -2,37 +2,11 @@
 
 This repository benchmarks classical ML models on the curated WBC dataset and checks whether model feature importances align with findings from medical literature. 
 
-A brief description of the project workflow can be accessed here: [Project Workflow](../docs/workflow.md) 
+A brief description of the project workflow can be accessed here: [Project Workflow](docs/workflow.md) 
 
 ## STRUCTURE 
 
 ![Structure](reports/figures/structure.png)
-
-breast-cancer-wbc-ml/
-│
-├── data/                        # Dataset
-│   └── breast-cancer.csv
-│
-├── docs/                        # Documentation
-│   ├── about-dataset.md
-│   ├── about-ml-algorithms.md
-│   ├── about-performance-metrics.md
-│   └── workflow.md
-│
-├── notebooks/                   # Jupyter notebooks
-│   └── wbc-modelling.ipynb
-│
-├── reports/
-│   ├── figures/                 # Plots (ROC curves, confusion matrices, etc.)
-│   └── model_results.csv
-│
-├── src/                         # (optional future expansion)
-├── tests/                       # (optional)
-│
-├── requirements.txt             # Python dependencies
-├── pyproject.toml / pdm.lock    # PDM environment files
-├── LICENSE
-└── README.md
 
 ## REPRODUCIBILITY
 
