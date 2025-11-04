@@ -2,9 +2,11 @@
 
 This repository benchmarks classical ML models on the curated WBC dataset and checks whether model feature importances align with findings from medical literature. 
 
+A brief description of the project workflow can be accessed here: [Project Workflow](../docs/workflow.md) 
+
 ## STRUCTURE 
 
-![Structure](reports\figures\structure.png)
+![Structure](reports/figures/structure.png)
 
 breast-cancer-wbc-ml/
 │
