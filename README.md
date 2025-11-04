@@ -4,7 +4,7 @@ This repository benchmarks classical ML models on the curated WBC dataset and ch
 
 ## STRUCTURE 
 
-![Structure](C:\\Users\\Sonia Varghese\\workspace\\breast-cancer-wbc-ml\\reports\\figures\\Screenshot (445).png)
+![Structure](reports\figures\structure.png)
 
 breast-cancer-wbc-ml/
 │
