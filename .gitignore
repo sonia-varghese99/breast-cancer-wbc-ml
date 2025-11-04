@@ -211,3 +211,5 @@ __marimo__/
 /pdm.lock
 /tests
 /src/breast_cancer_wbc_ml
+/__pycache__
+/.pdm-build
